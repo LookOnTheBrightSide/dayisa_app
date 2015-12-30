@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :microposts
+  resources :users
   get 'static_pages/help'
 
   get 'static_pages/contact'
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
   get 'static_pages/legal'
 
   get 'static_pages/about'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
